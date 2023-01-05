@@ -1,0 +1,386 @@
+* {
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    scroll-behavior: smooth;
+}
+
+#header {
+    z-index: 1;
+    height: 60px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+#nav {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+    display: inline-block;
+    line-height: 60px;
+}
+
+#nav .logo {
+    position: relative;
+    top: 12px;
+    left: 20px;
+    height: 36px;
+}
+
+#nav li a {
+    padding: 12px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0 16px;
+}
+
+#header .search-icon {
+    line-height: 60px;
+    font-size: 20px;
+    color: #fff;
+}
+
+#header .search-btn:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+
+/* slider */
+#slider {
+    margin-top: 60px;
+    background: url('../image/ronaldo.jfif') center / cover no-repeat;
+    padding-top: 50%;
+}
+
+
+/* content */
+/* cau thu */
+#content .team-list {
+    padding: 20px;
+    background: linear-gradient(108deg,#181733 0,#181733 30%,#6a1109);
+}
+
+.team-heading {
+    font-size: 30px;
+    padding: 30px 0 50px;
+    color: var(--white-color);
+}
+
+.team-heading::after {
+    display: block;
+    content: "";
+    height: 4px;
+    width: 226px;
+    margin-top: 10px;
+    background-color: rgb(228 34 9 / 50%);
+}
+
+.team-position {
+    color: var(--white-color);
+    margin: 0 40px;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(198, 163, 159, 0.5);
+}
+
+.member-imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.member-img {
+    max-width: 250px;
+    min-height: 180px;
+    border-radius: 25px;
+    transition: all 2s ease;
+}
+
+/* hlv */
+.hlv-team {
+    background: linear-gradient(150deg,#050329 0,#67120a 45%,rgb(75 19 24)),#050329 0;
+    padding: 20px;
+}
+
+.team-heading-1 {
+    font-size: 30px;
+    padding: 30px 0 50px;
+    color: var(--white-color);
+}
+
+.team-heading-1::after {
+    display: block;
+    content: "";
+    height: 4px;
+    width: 245px;
+    margin-top: 10px;
+    background-color: rgb(228 34 9 / 50%);
+}
+
+.hlv-intro {
+    display: flex;
+    color: var(--white-color);
+}
+
+.hlv-intro-text {
+    display: flex;
+    flex: 35%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hlv-name {
+    width: 60%;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+.hlv-maxim {
+    width: 60%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-style: italic;
+    font-weight: lighter;
+    text-shadow: 0 0 1px #000;
+}
+
+.hlv-img {
+    flex: 30%;
+}
+
+.number-matches {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+.img-sir {
+    width: 500px;
+    height: 500px;
+}
+
+.hlv-matches {
+    flex: 35%;
+}
+
+.number-cups {
+    text-align: center;
+}
+
+.number-cups p {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.number-cups ul {
+    list-style: none;
+    font-style: italic;
+    text-shadow: 0 0 1px #000;
+    font-size: 1.3em;
+    font-weight: 350;
+}
+
+.number-cups-text {
+    padding: 5px 0;
+}
+
+.hlv-info {
+    width: 60%;
+    margin: 3em auto;
+    background-color: var(--white-color);
+}
+
+.info-sir{
+    border-bottom: grey solid 1px;
+}
+
+.items-title,
+.info-sir-title {
+    color: gray;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.info-sir-text {
+    margin: 16px 0;
+    font-size: 15px;
+    line-height: 1.4;
+    text-transform: none;
+}
+
+.shortcut-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sub-items {
+    display: flex;
+    flex-direction: column;
+    flex: 30%;
+    justify-content: space-evenly;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.items-title {
+    font-size: 15px;
+}
+
+.items-date {
+    color: chocolate;
+}
+
+.items-number {
+    margin-left: 32px;
+    color: red;
+}
+
+.img-country {
+    width: 40px;
+    position: relative;
+    top: 7px;
+}
+
+/* journeys */
+.journeys {
+    background: linear-gradient(108deg,#181733 0,#181733 30%,#6a1109);
+    color: #fff;
+    padding: 20px;
+}
+
+.team-heading-2 {
+    font-size: 30px;
+    padding: 30px 0 50px;
+    color: var(--white-color);
+}
+
+.team-heading-2::after {
+    display: block;
+    content: "";
+    height: 4px;
+    width: 280px;
+    margin-top: 10px;
+    background-color: rgb(228 34 9 / 50%);
+}
+
+.run-6 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+}
+
+.run-text {
+    flex-basis: 30%;
+}
+
+.run-date {
+    margin: 8px 0;
+}
+
+.run-text-des {
+    margin-bottom: 24px;
+    text-transform: capitalize;
+    line-height: 1.6;
+}
+
+/* video tiki-taka */
+.tiki {
+    background: linear-gradient(108deg,#181733 0,#181733 30%,#6a1109);
+    color: #fff;
+    padding: 20px;
+}
+
+.team-heading-3 {
+    font-size: 30px;
+    padding: 30px 0 50px;
+    color: var(--white-color);
+}
+
+.team-heading-3::after {
+    display: block;
+    content: "";
+    height: 4px;
+    width: 150px;
+    margin-top: 10px;
+    background-color: rgb(228 34 9 / 50%);
+}
+
+.tiki-taka-text {
+    display: flex;
+    justify-content: center;
+}
+
+.text-tiki {
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    line-height: 1.6;
+    border-radius: 300px;
+    width: 610px;
+    text-align: center;
+}
+
+.video-tiki-taka {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    max-width: 90em;
+    max-height: 40em;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+}
+
+
+/* footer */
+#footer {
+    padding: 64px;
+    background-color: #181733;
+    text-align: center;
+}
+
+#footer.sosical-list {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 50px;
+}
+
+#footer .sosical-item {
+    color: #ffffff7a;
+    text-decoration: none;
+}
+
+.icon-footer {
+    font-size: 6rem;
+    padding: 20px;
+}
+
+.icon-footer:hover {
+    color: var(--white-color);
+}
+
+.copyright {
+    color: #ffffff7a;
+    font-size: 1.5rem;
+}
+
+#footer .copyright a {
+    color: #fff;
+    text-decoration: none;
+}

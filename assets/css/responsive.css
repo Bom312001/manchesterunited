@@ -1,0 +1,128 @@
+/* responsive nav */
+.nav-bars-btn {
+    color: var(--white-color);
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+.nav_overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0,0.3);
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+.nav_mobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background: linear-gradient(80deg,#181733 0,#181733 18%,rgb(228 34 9 / 95%));
+    color: #fff;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform linear 0.25s;
+    
+}
+.nav-mobile-close{
+    width: 15px;
+    height: 15px;
+    color:rgb(235, 205, 205);
+    font-size: 1.6rem;
+    position: absolute;
+    top:1rem;
+    right: 1rem;
+    cursor: pointer;
+    opacity: 1;
+}
+.nav-mobile-close>i{
+    padding: 12px 0;
+}
+
+.nav-mobile-close:hover{
+    opacity: 0.6;
+}
+
+.nav-input{
+    display: none;
+}
+.nav-input:checked~.nav_overlay{
+    display: block;
+}
+.nav-input:checked~.nav_mobile{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* PC */
+@media (min-width: 1024px) {
+    /* .member-imgs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .member-img {
+        max-width: 250px;
+        min-height: 180px;
+        border-radius: 25px;
+        transition: all 2s ease;
+    } */
+}
+
+/* tablet & moblie */
+@media (max-width: 1023px) {
+    .nav_pc {
+        display: none;
+    }
+    .nav-bars-btn{
+        display: block;
+    }
+    #nav{
+        margin-top: 32px;
+        margin-left: 16px;
+    }
+    #nav li{
+        display: block;s
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .member-imgs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .member-img {
+        max-width: 80%;
+        min-height: 80%;
+        border-radius: 25px;
+    }
+
+    .hlv-intro{
+        display: block;
+    }
+    
+    .hlv-img{
+        text-align: center;
+        margin: 16px 0;
+    }
+    .hlv-title{
+        margin-top: 20px;
+    }   
+}
+
+/* mobile */
+@media (max-width: 740px) {
+
+}
